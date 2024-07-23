@@ -29,16 +29,18 @@ main()
         printf("\n");
     }
 
-    int max = a[0][0];
+    int large=a[0][0];
+
+    
     
     for (int i = 0; i < row; i++){
 
         for (int j = 0; j < col; j++){
 
-            if (a[i][j]> max)
+            if (a[i][j]> large)
             {
-                max = a[i][j];
-                printf("%d",max);
+                large = a[i][j];
+               
             }
             
             
@@ -46,7 +48,7 @@ main()
         printf("\n");
     }
     
-
+        printf(" the largest number is:-%d",large);
     
     return 0;
 }

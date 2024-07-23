@@ -12,6 +12,6 @@ main(){
 	
 	third= (first+second)-180;
 	
-	printf("%d",third);65
+	printf("%d",third);
 	
 }
