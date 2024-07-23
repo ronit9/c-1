@@ -1,3 +1,60 @@
+#include<stdio.h>
+
+main(){
+    int row , col , k;
+
+    printf("Enter the array's row & column size: ");
+    scanf("%d %d",&row,&col);
+
+    int a[row][col];
+
+    for (int i = 0; i < row; i++){
+
+        for (int j = 0; j < col; j++){
+
+            printf("a[%d][%d]=",i , j);
+            scanf("%d",&a[i][j]);
+             
+        }
+        printf("\n");
+    }
+
+    for (int i = 0; i < row; i++){
+
+        for (int j = 0; j < col; j++){
+             printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+
+    for (int i = 0; i < row; i++){
+
+        for (int j = 0; j < col; j++){
+
+             printf("%d ",a[j][i]);
+        }
+        printf("\n");
+    }
+
+
+
+   
+
+    // for (int  i = 0; i < row; i++)
+    // {
+    //     for (int j = 0; j < col; j++){
+
+    //     }
+    // }
+    
+}
+
+
+
+
+
 // Input:
 // Enter the array's row & column size: 3
 // Enter array's elements:
