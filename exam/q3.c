@@ -31,46 +31,45 @@ main()
         
     }
 
-    //  for (int i = 0; i < row; i++){
-    //     for (int j = 0; j < col; j++)
-    //     {
-    //      if (i==j)
-    //      {
-    //         printf("%d ",a[i][j]);
-    //      }
-    //      else{
-    //         printf("  ");
-    //      }
+     for (int i = 0; i < row; i++){
+        for (int j = 0; j < col; j++)
+        {
+         if (i==j)
+         {
+            printf("%d ",a[i][j]);
+         }
+         else{
+            printf("  ");
+         }
          
-    //     }
-    //      printf("\n");
+        }
+         printf("\n");
         
-    // }
+    }
 
     printf("\n");
 
-    //   for (int i = 0; i < row; i++){
-    //     for (int j = 0; j < col; j++)
-    //     {
-    //      if (i==j || i+j==row-1)
-    //      {
-    //         printf("%d ",a[i][j]);
-    //      }
-    //      else{
-    //         printf("  ");
-    //      }
+      for (int i = 0; i < row; i++){
+        for (int j = 0; j < col; j++)
+        {
+         if (i==j || i+j==row-1)
+         {
+            printf("%d ",a[i][j]);
+         }
+         else{
+            printf("  ");
+         }
          
-    //     }
-    //      printf("\n");
+        }
+         printf("\n");
         
-    // }
+    }
 
     int rowSum = 0, colSum = 0;
 
     
-    for (int i = 0; i < row; i++) { // i=0 
-        rowSum += a[i][0] + a[i][col - 1];//sum= a[1][0] + a[0][2]= 3
-        
+    for (int i = 0; i < row; i++) { 
+        rowSum += a[i][0] + a[i][col - 1];
     }
     printf("sum of row:=%d\n",rowSum);
 
@@ -87,25 +86,25 @@ main()
 
 
 
-    // int rowmult = 1, colmult = 1;
+    int rowmult = 1, colmult = 1;
 
     
-    // for (int i = 0; i < row; i++) { // i=0 
-    //     rowSum *= a[i][1] * a[i][col - 1];//sum= a[1][0] + a[0][2]= 3
+    for (int i = 0; i < row; i++) { 
+        rowSum *= a[i][1] * a[i][col - 1];
         
-    // }
-    // printf("sum of row:=%d\n",rowmult);
+    }
+    printf("sum of row:=%d\n",rowmult);
 
     
-    // for (int j = 0; j < col; j++) {
-    //     colSum *= a[1][j] * a[row - 1][j];
+    for (int j = 0; j < col; j++) {
+        colSum *= a[1][j] * a[row - 1][j];
         
-    // }
-    // printf("sum of col:=%d\n",colmult);
+    }
+    printf("sum of col:=%d\n",colmult);
 
-    // int totalmult = rowmult * colmult; 
+    int totalmult = rowmult * colmult; 
 
-    // printf("Sum of the boundary elements  is: %d\n", totalmult);
+    printf("Sum of the boundary elements  is: %d\n", totalmult);
 
 
         
