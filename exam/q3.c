@@ -31,39 +31,39 @@ main()
         
     }
 
-     for (int i = 0; i < row; i++){
-        for (int j = 0; j < col; j++)
-        {
-         if (i==j)
-         {
-            printf("%d ",a[i][j]);
-         }
-         else{
-            printf("  ");
-         }
+    //  for (int i = 0; i < row; i++){
+    //     for (int j = 0; j < col; j++)
+    //     {
+    //      if (i==j)
+    //      {
+    //         printf("%d ",a[i][j]);
+    //      }
+    //      else{
+    //         printf("  ");
+    //      }
          
-        }
-         printf("\n");
+    //     }
+    //      printf("\n");
         
-    }
+    // }
 
     printf("\n");
 
-      for (int i = 0; i < row; i++){
-        for (int j = 0; j < col; j++)
-        {
-         if (i==j || i+j==row-1)
-         {
-            printf("%d ",a[i][j]);
-         }
-         else{
-            printf("  ");
-         }
+    //   for (int i = 0; i < row; i++){
+    //     for (int j = 0; j < col; j++)
+    //     {
+    //      if (i==j || i+j==row-1)
+    //      {
+    //         printf("%d ",a[i][j]);
+    //      }
+    //      else{
+    //         printf("  ");
+    //      }
          
-        }
-         printf("\n");
+    //     }
+    //      printf("\n");
         
-    }
+    // }
 
     int rowSum = 0, colSum = 0;
 

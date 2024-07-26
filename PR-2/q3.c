@@ -8,7 +8,7 @@ main(){
 	printf("enter your score:");
 	scanf("%d",&score);
 	
-	if(score>90){
+	if(score>90 && score < 100){
 		printf("your grade is A");
 	}
 	
