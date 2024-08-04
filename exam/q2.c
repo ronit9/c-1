@@ -19,10 +19,13 @@ main()
     scanf("%d", &value);
 
      for (int i = 0; i < size; i++){
-      sum=a[i]+a[i+1];
-      if (sum==value)
+
+      for (int j = 0; j < i; j++)
       {
-        printf("two value is %d,%d",a[i],a[i+1]);
+        if (a[i]+a[j]==value)
+        {
+          printf("two value is %d,%d",a[i],a[j]);
+        }
       }
       
     }

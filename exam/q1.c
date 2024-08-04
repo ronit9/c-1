@@ -7,7 +7,7 @@ main()
     printf("enter array size:-");
     scanf("%d", &size);
 
-    int a[size], same;
+    int a[size];
 
     for (int i = 0; i < size; i++)
     {
@@ -18,11 +18,15 @@ main()
     for (int i = 0; i < size; i++)
     {
 
-        if (a[i] == a[i + 1])
+        for (int j = 0; j < i; j++)
         {
-            same = a[i];
-            printf("same elements are=%d\n", same);
+            if (a[i]==a[j])
+            {
+                printf("same elements are=%d\n", a[i]);
+            }
+            
         }
+        
         
     }
 
