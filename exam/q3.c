@@ -21,7 +21,8 @@ main()
 
     
 
-
+    printf("\n");
+    printf("elements of array\n\n");
     for (int i = 0; i < row; i++){
         for (int j = 0; j < col; j++)
         {
@@ -31,6 +32,8 @@ main()
         
     }
 
+    printf("\n");
+    printf("printing  diagonal element\n\n");
      for (int i = 0; i < row; i++){
         for (int j = 0; j < col; j++)
         {
@@ -48,7 +51,7 @@ main()
     }
 
     printf("\n");
-
+    printf("printing cross diagonal element\n\n");
       for (int i = 0; i < row; i++){
         for (int j = 0; j < col; j++)
         {
@@ -65,23 +68,57 @@ main()
         
     }
 
-    int rowSum = 0, colSum = 0;
+    printf("\n");
+    printf("printing sum of boundry element element\n\n");
 
+    int rowsum=0;
+
+        for (int  i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++){
+
+            if (i == 0 ||  i == row - 1)
+            {
+              rowsum += a[i][j];
+            }
+        }
+    }
+
+    printf("sum of row boudry elements=%d\n\n",rowsum);
+
+    int colsum=0;
+
+        for (int  i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++){
+
+            if (j == 0 ||  j == col - 1)
+            {
+              colsum += a[i][j];
+            }
+        }
+    }
+
+    printf("sum of col boundry elemenets=%d",colsum);
     
-    for (int i = 0; i < row; i++) { 
-        rowSum += a[i][0] + a[i][col - 1];
-    }
-    printf("sum of row:=%d\n",rowSum);
-
-    for (int j = 0; j < col; j++) {
-        colSum += a[0][j] + a[row - 1][j];
-    }
-    printf("sum of col:=%d\n",colSum);
-
-    int totalSum = rowSum + colSum;
-
+    int totalSum = rowsum + colsum;
     printf("Sum of the boundary elements  is: %d\n", totalSum);
 
+    printf("\n");
+    printf("printing sum of anti diagonal element element\n\n");
+
+    int antisum=0;
+
+        for (int  i = 0; i < row; i++){
+            for (int j = 0; j < col; j++){
+
+                if (i+j==row-1){
+                    antisum += a[i][j];
+                }
+            }
+        }
+
+    printf("sum of anti diagonal elements=%d",antisum);
 
 
 

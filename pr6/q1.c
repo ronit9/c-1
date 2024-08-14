@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    if (Palindrome) {
+    if (Palindrome=1) {
         printf("The string is a palindrome.\n");
     } else {
         printf("The string is not a palindrome.\n");
@@ -29,3 +29,12 @@ int main() {
 
     return 0;
 }
+
+
+// Q.1 Pelindrome Checker
+// Develop a program that checks whether a given string is a palindrome or not without using string
+// functions.
+
+// Example:
+// Input: Enter any string: nayan
+// Output: The given string is a Palindrome.
