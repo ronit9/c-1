@@ -21,9 +21,6 @@ main()
         {
             printf("Negative elements from an Array: %d\n", a[i]);
         }
-        else{
-            printf("Positive elements from an Array: %d\n", a[i]);
-        }
         
         
     }
