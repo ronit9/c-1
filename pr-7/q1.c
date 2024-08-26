@@ -26,26 +26,26 @@ main()
         case 2:
             a= inputint_a();
             b=inputint_b();
-           int c =  subtraction(a, b);
-            printf("result:\t %d - %d = %d",a , b , c);
+           int d =  subtraction(a, b);
+            printf("result:\t %d - %d = %d",a , b , d);
             break;
         case 3:
             a= inputint_a();
             b=inputint_b();
-            int c = multiplication(a, b);
-            printf("result:\t %d * %d = %d",a , b , c);
+            int e = multiplication(a, b);
+            printf("result:\t %d * %d = %d",a , b , e);
             break;
         case 4:
             a= inputint_a();
             b=inputint_b();
-           float c = division(a, b);
-            printf("result:\t %d / %d = %d",a , b , c);
+           float f = division(a, b);
+            printf("result:\t %d / %d = %d",a , b , f);
             break;
         case 5:
             a= inputint_a();
             b=inputint_b();
-            float c =  modulus(a, b);
-            printf("result:\t %d %% %d = %d",a , b , c);
+            float g =  modulus(a, b);
+            printf("result:\t %d %% %d = %d",a , b , g);
             break;
         default:
             printf("enter valid choice");
