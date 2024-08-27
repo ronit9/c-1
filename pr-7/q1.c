@@ -39,12 +39,12 @@ main()
             a= inputint_a();
             b=inputint_b();
            float f = division(a, b);
-            printf("result:\t %d / %d = %d",a , b , f);
+            printf("result:\t %d / %d = %f",a , b , f);
             break;
         case 5:
             a= inputint_a();
             b=inputint_b();
-            float g =  modulus(a, b);
+            int g =  modulus(a, b);
             printf("result:\t %d %% %d = %d",a , b , g);
             break;
         default:
