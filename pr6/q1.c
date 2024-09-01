@@ -54,19 +54,6 @@ int main()
         printf("%s is not Palindrom",a);
     }
 
-    // for (int start = 0, end = length - 1; start < end; start++, end--) {
-    //     if (str[start] != str[end]) {
-    //         Palindrome = 0;
-
-    //     }
-    // }
-
-    // if (Palindrome=1) {
-    //     printf("The string is a palindrome.\n");
-    // } else {
-    //     printf("The string is not a palindrome.\n");
-    // }
-
     return 0;
 }
 
